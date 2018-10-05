@@ -7,7 +7,7 @@
     <style>
       #map {
         height: 100%;
-        width: calc(100% - 250px);
+        width: calc(100% - 300px);
       }
       html, body {
         height: 100%;
@@ -25,7 +25,7 @@
         position: absolute;
         top: 10px;
         right: 0px;
-        width: 240px;
+        width: 290px;
         font-size: 0.8em;
       }
       div.poly{
@@ -49,7 +49,7 @@
     <div id="info">
       <h1>Visualizing commute time</h1>
 
-      <p>This was really an exploration of a few things:
+      <p>This was an exploration of a few things:
         <ul>
           <li>Google's Geocoding API</li>
           <li>Google Maps - Displaying lines</li>
@@ -66,8 +66,9 @@
       <p>
         Issues and challenges:
         <ul>
-          <li>Need more of a grid-based approach to data, rather than homes for sale.</li>
-          <li>Working with teh polygons was challenging. There's a good bit of code and complexity.</li>
+          <li>Need more of a grid-based approach to the destination locations, rather than homes for sale.</li>
+          <li>Working with the polygons was challenging. There's a good bit of code and complexity. Could probably 
+              use some of d3's geojson to make it easier.</li>
           <li>I'm a bit sceptical of these commute times. They seem low/ambitious and might not factor in traffic well.</li>
         </ul>
       </p>

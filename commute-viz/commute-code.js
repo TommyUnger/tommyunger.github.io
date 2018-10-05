@@ -166,7 +166,7 @@ function initMap() {
     });
 
     // get the locations json, originally from Redfin
-    d3.json("/locations.json")
+    d3.json("locations.json")
       .then(function(json) {
           // this was easy
           json.forEach(function(route){
