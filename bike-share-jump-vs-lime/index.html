@@ -28,11 +28,24 @@
             max-width: 1030px;
             margin: 0px auto;
         }
-        h1{
+        h1, h3{
             text-align: center;
+        }
+        h1{
+            margin-bottom: 0;
+        }
+        h3{
+            margin-top: 0px;
+            font-weight: normal;
+        }
+        h3>a{
+            font-weight: bold;
         }
         p{
             font-size: 1.1em;
+        }
+        a{
+            color: #5577aa;
         }
         table.summary{
             width: 400px;
@@ -46,12 +59,16 @@
             background-color: white;
             padding: 5px;
         }
+        .home_link{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
     <div id="content">
     <h1>Seattle e-assist bike share comparison: Jump vs Lime</h1>
+    <h3>By: @<a href="https://twitter.com/tommyunger">tommyunger</a></h3>
 
     <p>
         I've been bike commuting in Seattle since I first moved here nearly 20 years ago. From my east-side commute to Microsoft to various commutes around North Seattle and Downtown, I've found biking to be a great way to get around. For the most part, during rush hour it's similar to car speed and it's usually significantly faster than the bus.
@@ -146,6 +163,10 @@
         <br />
         If you want to get your own data from Strava's API, you can try my approach (though it's admittedly a bit rough around the edges) <a href="https://github.com/TommyUnger/strava-api">Strava API to PostgreSQL</a>.
     </p>
+    <br />
+    <div class="home_link">- <a href="/">tommyunger.github.io</a> -</div>
+    <br />
+
     </div>
 </body>
 </html>
