@@ -159,6 +159,12 @@
             display: block;
         }
         
+        .pp{
+            width: 32px; 
+            border-radius: 16px; 
+            position: absolute; 
+            top: -3px;
+        }
 
         @media only screen 
         and (min-device-width : 375px) 
@@ -180,14 +186,28 @@
                 width: 250px;
             }
             .company{
-                width: 30%;
+                width: 100%;
             }
             .job{
-                width: 70%;
+                width: 100%;
             }
             img.logo{
                 height: 90px;
                 width: 90px;
+            }
+            td{
+             display: block;
+            }
+            .pp{
+                width: 64px; 
+                border-radius: 32px; 
+            }
+            h3{
+                display: block !important;
+            }
+            tenure{
+                display: block;
+                position: relative;
             }
         }
 
@@ -201,7 +221,7 @@
  </head>
  <body>
     <div>
-     <h1>Tommy Unger <img src="/images/profile-pic.png" style="width: 32px; border-radius: 16px; position: absolute; top: -3px;" /><br />
+     <h1>Tommy Unger <img src="/images/profile-pic.png" class="pp" /><br />
         <span>Leading the way toward data-driven experiences, insights, and decisions</span>
         <ul class="contact">
             <li><label>email</label>first.last@gmail.com</li>
