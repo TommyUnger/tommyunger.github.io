@@ -125,8 +125,10 @@ function handleMouseOver(d, i){
     tt.html(det.select("hide").html())
     if(d3.event.pageX < window.innerWidth - (w+30)){
         tt.style("left", (d3.event.pageX+10) + "px");
-    }else{
+    }else if(d3.event.pageX-(w+20) > 0){
         tt.style("left", (d3.event.pageX-(w+20))+ "px");
+    }else{
+        tt.style("left", (10)+ "px");
     }
 
     if(d3.event.pageY < document.documentElement.scrollHeight - 140){
